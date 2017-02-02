@@ -20,15 +20,8 @@ class CompleteMe
   end
 
   def suggest(string)
-    @root.find_node(string)
+    @root.suggest(string)
     @@string = string
   end
 
 end
-
-
-# completion = CompleteMe.new
-# completion.insert("hi")
-
-# require "pry"; binding.pry
-# ""
